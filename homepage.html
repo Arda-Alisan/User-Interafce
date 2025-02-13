@@ -1,0 +1,120 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Antalya Presentation</title>
+    <link rel="stylesheet" href="general.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+        integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+</head>
+
+<body onload="showAlert('homepage_header', 'danger', 'Welcome to OUR WEB SITE :)')">
+    <header id="homepage_header">
+        <h1>ANTALYA</h1>
+        <nav>
+            <ul>
+                <li><a href="places_to_visit.html" class="text-decoration-none">Places to Visit</a></li>
+                <li><a href="restaurants.html" class="text-decoration-none">Restaurants</a></li>
+                <li><a href="activities.html" class="text-decoration-none">Activities</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="container mt-3" style="margin-left:150px">
+        <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+            <ol class="carousel-indicators">
+                <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="4"></li>
+            </ol>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="Homework_UI_Pictures/Place_to_Visit_Photos/Yivli-Minare.jpg" class="d-block w-100 "
+                        alt="Yivli-Minare">
+                </div>
+                <div class="carousel-item">
+                    <img src="Homework_UI_Pictures/Activities_photos/Rafting.jpg" class="d-block w-100 " alt="Rafting">
+                </div>
+                <div class="carousel-item">
+                    <img src="Homework_UI_Pictures/Place_to_Visit_Photos/Damlatas.jpg" class="d-block w-100 "
+                        alt="Damlataş">
+                </div>
+                <div class="carousel-item">
+                    <img src="Homework_UI_Pictures/Restaurants_photos/Alp_Pasa_800.jpg" class="d-block w-100 "
+                        alt="Alp_Pasa">
+                </div>
+                <div class="carousel-item">
+                    <img src="Homework_UI_Pictures/Place_to_Visit_Photos/Düden-Waterfall.jpg" class="d-block w-100 "
+                        alt="Düden-Waterfall">
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-target="#carouselExampleIndicators"
+                data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-target="#carouselExampleIndicators"
+                data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+            </button>
+        </div>
+
+        <h2 class="mt-4" style="text-align: center; color: red;">ABOUT ANTALYA</h2>
+        <textarea style=" background-color: springgreen;" name="about" rows="21" cols="150">
+    Antalya is the city that is the center of Antalya province. It is seen as the "capital of tourism" in Turkey. The number of tourists increases especially in the summer months.
+
+    Antalya is the host of Expo 2016.
+    Antalya Golden Orange Film Festival is held internationally every year in October.
+    
+    The climate of Antalya province generally falls into the Mediterranean climate. The climate type, which is expressed as hot and dry in summers and warm and rainy in winters, in other words, falls into the moderate maritime and hot marine climate class, while the cold and semi-continental climate type is observed in the more inland areas. The average temperature in summer is between 30 - 34 degrees. In January, the average temperature varies between 9 and 15 degrees. It almost never snows in the city.
+    
+    Antalya Airport, located to the east of the city center, is the most important point providing entry and exit by air. It is possible to fly from Antalya Airport to almost every province of Turkey, as well as to various cities in Europe and the Middle East.
+    
+    Antalya, located in the south of the Anatolian plateau, between the Taurus Mountains and the Mediterranean coastline, is in a region where Yoruk and Mediterranean cultures live simultaneously. That's why it combines the thyme scent of the Taurus Mountains with the sea scent of the Mediterranean. Yoruk food habits combine with Mediterranean food culture and give a special spirit to the taste.
+    
+    Considering that cuisines consist of the treasures of a deep-rooted culture and geography, Antalya dishes contain health with vegetables and seafood. Also, jams made from citrus fruits rich in vitamin C are world famous. The most important contribution of the Yoruks to Antalya cuisine is yoghurt.
+    </textarea>
+
+        <!-- Comment Area -->
+
+        <h2 class="mt-4" style="text-align: center;">Comments</h2>
+        <div id="comments">
+            <!-- Comments will be listed here -->
+        </div>
+        <div class="form-group">
+            <label for="name">Name:</label>
+            <input type="text" class="form-control" id="name">
+        </div>
+        <div class="form-group">
+            <label for="comment">Comment:</label>
+            <textarea class="form-control" rows="5" id="comment"></textarea>
+        </div>
+        <button type="button" id="btn-sendComment" class="btn btn-primary" onclick="addComment()">Send Comment</button>
+    </div>
+
+
+    <!-- Comment Area End -->
+
+    <footer class="mt-5">
+        <p>&copy; ARDA ALİŞAN</p>
+    </footer>
+
+    <script src="general.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.min.js"
+        integrity="sha384-+sLIOodYLS7CIrQpBjl+C7nPvqq+FbNUBDunl/OZv93DB7Ln/533i8e/mZXLi/P+"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
