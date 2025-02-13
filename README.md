@@ -33,11 +33,10 @@ In general terms, our site consists of _4 pages_. These :
 * There are **various activities** that can be done in Antalya. <br>
 * **Brief information** about these activities and **where** they can be done is available. <br> <br>
 
-# Duties :
+# Duties || ### Coding::
 ### Theoric Part:
 *Arda* : Requirements Part, Desing Part
 
-### Coding:
-There wasn't much we did separately. <br> 
-We coded almost all of them together on the same computer.
+
+
 
